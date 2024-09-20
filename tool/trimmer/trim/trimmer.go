@@ -20,12 +20,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/utils/dir_utils"
+	"github.com/cloudwegox/thriftgo/utils/dir_utils"
 
 	"github.com/dlclark/regexp2"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/semantic"
 )
 
 type Trimmer struct {

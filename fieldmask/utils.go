@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 func errDesc(desc *thrift_reflection.TypeDescriptor, msg ...string) error {

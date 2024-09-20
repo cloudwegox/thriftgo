@@ -26,5 +26,5 @@ AST.go: AST.thrift
 	sed -i'.backup' -E '/func \(p \*(Type|ConstValue)\) String\(\) string/{N;N;N;N;N;N;d;}' AST.go && rm AST.go.backup
 
 ../plugin/protocol.go: ../plugin/protocol.thrift
-	thriftgo --gen go:package_prefix=github.com/cloudwego/thriftgo/,template=slim,gen_type_meta \
+	thriftgo --gen go:package_prefix=github.com/cloudwegox/thriftgo/,template=slim,gen_type_meta \
 		../plugin/protocol.thrift && mv gen-go/plugin/protocol.go ../plugin/ && rm -r gen-go

@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 func TestDescriptor(t *testing.T) {

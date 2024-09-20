@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/cloudwego/thriftgo/internal/utils"
+	"github.com/cloudwegox/thriftgo/internal/utils"
 )
 
 var bytesPool = sync.Pool{

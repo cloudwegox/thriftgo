@@ -18,9 +18,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/pkg/test"
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 // 检测各种报错提示场景

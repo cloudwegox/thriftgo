@@ -20,8 +20,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/plugin"
 )
 
 // FileManager manages in-memory files that used during the code generation process.

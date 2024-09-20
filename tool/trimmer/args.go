@@ -20,8 +20,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/plugin"
-	"github.com/cloudwego/thriftgo/version"
+	"github.com/cloudwegox/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/version"
 )
 
 // StringSlice implements the flag.Value interface on string slices

@@ -15,8 +15,8 @@
 package templates
 
 import (
-	"github.com/cloudwego/thriftgo/generator/golang/templates/raw_struct"
-	"github.com/cloudwego/thriftgo/generator/golang/templates/slim"
+	"github.com/cloudwegox/thriftgo/generator/golang/templates/raw_struct"
+	"github.com/cloudwegox/thriftgo/generator/golang/templates/slim"
 )
 
 // Alternative returns all alternative templates.

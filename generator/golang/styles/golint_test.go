@@ -17,7 +17,7 @@ package styles
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/pkg/test"
 )
 
 func TestGoLint(t *testing.T) {

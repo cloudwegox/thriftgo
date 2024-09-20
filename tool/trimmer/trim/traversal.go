@@ -15,7 +15,7 @@
 package trim
 
 import (
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // traverse and remove the unmarked part of ast

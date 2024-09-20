@@ -17,7 +17,7 @@ package streaming
 import (
 	"fmt"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // TODO this package should finally be migrated to Kitex tool together with server/client/processor templates.

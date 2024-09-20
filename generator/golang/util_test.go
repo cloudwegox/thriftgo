@@ -15,7 +15,7 @@
 package golang
 
 import (
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 	"testing"
 )
 

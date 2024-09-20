@@ -25,14 +25,14 @@ import (
 
 	"golang.org/x/text/language"
 
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/generator/golang/common"
-	"github.com/cloudwego/thriftgo/generator/golang/extension/meta"
-	"github.com/cloudwego/thriftgo/generator/golang/styles"
-	"github.com/cloudwego/thriftgo/generator/golang/templates"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/plugin"
-	"github.com/cloudwego/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/generator/golang/common"
+	"github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
+	"github.com/cloudwegox/thriftgo/generator/golang/styles"
+	"github.com/cloudwegox/thriftgo/generator/golang/templates"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/semantic"
 
 	"golang.org/x/text/cases"
 )
@@ -40,13 +40,13 @@ import (
 // Default libraries.
 const (
 	DefaultThriftLib    = "github.com/apache/thrift/lib/go/thrift"
-	DefaultUnknownLib   = "github.com/cloudwego/thriftgo/generator/golang/extension/unknown"
-	DefaultMetaLib      = "github.com/cloudwego/thriftgo/generator/golang/extension/meta"
-	ThriftReflectionLib = "github.com/cloudwego/thriftgo/thrift_reflection"
-	ThriftFieldMaskLib  = "github.com/cloudwego/thriftgo/fieldmask"
-	ThriftOptionLib     = "github.com/cloudwego/thriftgo/extension/thrift_option"
+	DefaultUnknownLib   = "github.com/cloudwegox/thriftgo/generator/golang/extension/unknown"
+	DefaultMetaLib      = "github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
+	ThriftReflectionLib = "github.com/cloudwegox/thriftgo/thrift_reflection"
+	ThriftFieldMaskLib  = "github.com/cloudwegox/thriftgo/fieldmask"
+	ThriftOptionLib     = "github.com/cloudwegox/thriftgo/extension/thrift_option"
 	defaultTemplate     = "default"
-	ThriftJSONUtilLib   = "github.com/cloudwego/thriftgo/utils/json_utils"
+	ThriftJSONUtilLib   = "github.com/cloudwegox/thriftgo/utils/json_utils"
 	KitexStreamingLib   = "github.com/cloudwego/kitex/pkg/streaming"
 )
 

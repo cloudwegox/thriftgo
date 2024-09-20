@@ -21,9 +21,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/plugin"
-	"github.com/cloudwego/thriftgo/utils/dir_utils"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/utils/dir_utils"
 )
 
 // LangSpec is the parameter to specify which language to generate codes for and

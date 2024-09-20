@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/thrift_reflection"
-	"github.com/cloudwego/thriftgo/thrift_reflection/thrift_reflection_test"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/thrift_reflection/thrift_reflection_test"
 )
 
 func TestDescriptor(t *testing.T) {

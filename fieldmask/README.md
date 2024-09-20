@@ -72,7 +72,7 @@ By default, a field in mask means "PASS" (**will be** serialized/deserialized), 
 However, we allow user to use fieldmask as a **"Black List"**, as long as enable option `Options.BlackList` mode. Under such mode, a field in the mask means "REJECT", and the other fields means "PASS". See [main_test.go](https://github.com/cloudwego/kitex-tests/blob/feat/fieldmask_test/thriftrpc/fieldmask/main_test.go) for detailed usage.
 
 ### Type Descriptor
-Type descriptor is the runtime representation of a message definition, in aligned with [Protobuf Descriptor](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/descriptor.proto). To get a type descriptor, you must enable thrift reflection feature first, which was introduced in thriftgo [v0.3.0](https://github.com/cloudwego/thriftgo/pull/83). you can generate related codes for this feature using option `with_reflection`.
+Type descriptor is the runtime representation of a message definition, in aligned with [Protobuf Descriptor](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/descriptor.proto). To get a type descriptor, you must enable thrift reflection feature first, which was introduced in thriftgo [v0.3.0](https://github.com/cloudwegox/thriftgo/pull/83). you can generate related codes for this feature using option `with_reflection`.
 
 ## How to use fieldmask?
 1. First, you must generates codes for this feature using two options `with_fieldmask` and `with_reflection`
@@ -83,8 +83,8 @@ $ thriftgo -g with_field_mask,with_reflection ${your_idl}
 ```go
 import (
 	"sync"
-	"github.com/cloudwego/thriftgo/fieldmask"
-	nbase "github.com/cloudwego/thriftgo/test/golang/fieldmask/gen-new/base"
+	"github.com/cloudwegox/thriftgo/fieldmask"
+	nbase "github.com/cloudwegox/thriftgo/test/golang/fieldmask/gen-new/base"
 )
 
 var fieldmaskCache sync.Map
@@ -145,7 +145,7 @@ See [(main_test.go)](../test/golang/fieldmask/main_test.go)
 ```
 goos: darwin
 goarch: amd64
-pkg: github.com/cloudwego/thriftgo/test/golang/fieldmask
+pkg: github.com/cloudwegox/thriftgo/test/golang/fieldmask
 cpu: Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz
 BenchmarkWriteWithFieldMask/old-16         	     2188 ns/op	       0 B/op	       0 allocs/op
 BenchmarkWriteWithFieldMask/new-16         	     2281 ns/op	       0 B/op	       0 allocs/op

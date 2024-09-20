@@ -18,7 +18,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/cloudwego/thriftgo/generator/golang/common"
+	"github.com/cloudwegox/thriftgo/generator/golang/common"
 )
 
 // GoLint implements a naming conversion algorithm that similar to https://github.com/golang/lint.

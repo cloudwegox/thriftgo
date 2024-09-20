@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // ResolveSymbols checks the existence of each symbol in the current AST

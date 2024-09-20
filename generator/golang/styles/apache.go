@@ -18,7 +18,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/cloudwego/thriftgo/generator/golang/common"
+	"github.com/cloudwegox/thriftgo/generator/golang/common"
 )
 
 // Apache ports functions adapted from the apache thrift go generator.

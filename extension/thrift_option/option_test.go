@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 func TestStructOptionWithStructBasic(t *testing.T) {

@@ -14,7 +14,7 @@
 
 package plugin
 
-import "github.com/cloudwego/thriftgo/generator/golang/extension/meta"
+import "github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
 
 // MarshalRequest encodes a request with binary protocol.
 func MarshalRequest(req *Request) ([]byte, error) {

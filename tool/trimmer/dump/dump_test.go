@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/pkg/test"
 )
 
 func TestDumpSingle(t *testing.T) {

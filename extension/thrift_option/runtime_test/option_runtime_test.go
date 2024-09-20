@@ -17,10 +17,10 @@ package runtime_test
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/extension/thrift_option"
-	"github.com/cloudwego/thriftgo/extension/thrift_option/runtime_test/option_gen"
-	"github.com/cloudwego/thriftgo/extension/thrift_option/runtime_test/option_gen/annotation/entity"
-	"github.com/cloudwego/thriftgo/extension/thrift_option/runtime_test/option_gen/annotation/validation"
+	"github.com/cloudwegox/thriftgo/extension/thrift_option"
+	"github.com/cloudwegox/thriftgo/extension/thrift_option/runtime_test/option_gen"
+	"github.com/cloudwegox/thriftgo/extension/thrift_option/runtime_test/option_gen/annotation/entity"
+	"github.com/cloudwegox/thriftgo/extension/thrift_option/runtime_test/option_gen/annotation/validation"
 )
 
 func TestRuntimeSimpleGrammarOption(t *testing.T) {

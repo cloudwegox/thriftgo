@@ -20,7 +20,7 @@ import (
 	"database/sql"
 	"database/sql/driver"
 	"fmt"
-	"github.com/cloudwego/thriftgo/extension/thrift_option"
+	"github.com/cloudwegox/thriftgo/extension/thrift_option"
 )
 
 const (

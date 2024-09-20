@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/pkg/reserved"
+	"github.com/cloudwegox/thriftgo/pkg/reserved"
 )
 
 // DetectKeyword detects if there is any identifier using a reserved

@@ -17,8 +17,8 @@ package semantic_test
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/pkg/test"
-	"github.com/cloudwego/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/semantic"
 )
 
 func TestSplitType(t *testing.T) {

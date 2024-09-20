@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/utils"
+	"github.com/cloudwegox/thriftgo/utils"
 )
 
 func (f *FileDescriptor) GetIncludeFD(alias string) *FileDescriptor {

@@ -17,7 +17,7 @@ package golang
 import (
 	"fmt"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // ReadWriteContext contains information for generating codes in ReadField* and

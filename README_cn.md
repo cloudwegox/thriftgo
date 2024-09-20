@@ -10,12 +10,12 @@
 
 使用 `go install`：
 
-`GO111MODULE=on go install github.com/cloudwego/thriftgo@latest`
+`GO111MODULE=on go install github.com/cloudwegox/thriftgo@latest`
 
 或从源代码构建：
 
 ```shell
-git clone https://github.com/cloudwego/thriftgo.git
+git clone https://github.com/cloudwegox/thriftgo.git
 cd thriftgo
 export GO111MODULE=on
 go mod tidy

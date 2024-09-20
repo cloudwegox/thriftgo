@@ -21,12 +21,12 @@ import (
 	"testing"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/cloudwego/thriftgo/fieldmask"
+	"github.com/cloudwegox/thriftgo/fieldmask"
 
-	hbase "github.com/cloudwego/thriftgo/test/golang/fieldmask/gen-halfway/base"
-	nbase "github.com/cloudwego/thriftgo/test/golang/fieldmask/gen-new/base"
-	obase "github.com/cloudwego/thriftgo/test/golang/fieldmask/gen-old/base"
-	zbase "github.com/cloudwego/thriftgo/test/golang/fieldmask/gen-zero/base"
+	hbase "github.com/cloudwegox/thriftgo/test/golang/fieldmask/gen-halfway/base"
+	nbase "github.com/cloudwegox/thriftgo/test/golang/fieldmask/gen-new/base"
+	obase "github.com/cloudwegox/thriftgo/test/golang/fieldmask/gen-old/base"
+	zbase "github.com/cloudwegox/thriftgo/test/golang/fieldmask/gen-zero/base"
 	"github.com/stretchr/testify/require"
 )
 

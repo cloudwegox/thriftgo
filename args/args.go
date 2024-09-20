@@ -23,12 +23,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudwego/thriftgo/version"
+	"github.com/cloudwegox/thriftgo/version"
 
-	"github.com/cloudwego/thriftgo/generator"
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/generator/golang"
-	"github.com/cloudwego/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/generator"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/generator/golang"
+	"github.com/cloudwegox/thriftgo/plugin"
 )
 
 // StringSlice implements the flag.Value interface on string slices

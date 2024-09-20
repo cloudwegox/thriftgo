@@ -17,9 +17,9 @@ package trim
 import (
 	"fmt"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/semantic"
-	"github.com/cloudwego/thriftgo/tool/trimmer/dump"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/tool/trimmer/dump"
 )
 
 // TrimBatchContent receives a group of thrift idl as map[path]content and mainIDLPath, and return the result as the same format.

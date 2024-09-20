@@ -19,9 +19,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/pkg/test"
-	"github.com/cloudwego/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/semantic"
 )
 
 // test single file ast trimming

@@ -15,11 +15,11 @@
 package sdk
 
 import (
-	"github.com/cloudwego/thriftgo/utils/dir_utils"
+	"github.com/cloudwegox/thriftgo/utils/dir_utils"
 
-	"github.com/cloudwego/thriftgo/config"
+	"github.com/cloudwegox/thriftgo/config"
 
-	"github.com/cloudwego/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/plugin"
 )
 
 func RunThriftgoAsSDK(wd string, SDKPlugins []plugin.SDKPlugin, args ...string) error {

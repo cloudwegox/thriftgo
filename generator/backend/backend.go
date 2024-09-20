@@ -15,7 +15,7 @@
 // Package backend defines the Backend interface for generators.
 package backend
 
-import "github.com/cloudwego/thriftgo/plugin"
+import "github.com/cloudwegox/thriftgo/plugin"
 
 // LogFunc defines a set of log functions.
 type LogFunc struct {

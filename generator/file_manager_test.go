@@ -17,10 +17,10 @@ package generator_test
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/generator"
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/pkg/test"
-	"github.com/cloudwego/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/generator"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/plugin"
 )
 
 func pstr(s string) *string {

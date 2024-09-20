@@ -17,7 +17,7 @@ package args
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/pkg/test"
 )
 
 func TestArgs(t *testing.T) {

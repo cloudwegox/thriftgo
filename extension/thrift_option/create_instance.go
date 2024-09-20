@@ -17,8 +17,8 @@ package thrift_option
 import (
 	"encoding/hex"
 	"errors"
-	"github.com/cloudwego/thriftgo/thrift_reflection"
-	"github.com/cloudwego/thriftgo/utils"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/utils"
 	"reflect"
 	"strconv"
 	"strings"

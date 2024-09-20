@@ -15,12 +15,12 @@
 package test_util
 
 import (
-	"github.com/cloudwego/thriftgo/generator"
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/generator/golang"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/plugin"
-	"github.com/cloudwego/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/generator"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/generator/golang"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/semantic"
 )
 
 func GenerateGolang(idl string, output string, genOpts []plugin.Option, pluginOpts []*plugin.Desc) (generator.Generator, *plugin.Response) {

@@ -17,7 +17,7 @@ package unknowntest
 import (
 	codes "example.com/test/gen-ext/unknown"
 
-	"github.com/cloudwego/thriftgo/generator/golang/extension/unknown"
+	"github.com/cloudwegox/thriftgo/generator/golang/extension/unknown"
 )
 
 // Type assertions.

@@ -10,12 +10,12 @@ Note: before executing the following commands, **make sure your `GOPATH` environ
 
 Using `go install`:
 
-`GO111MODULE=on go install github.com/cloudwego/thriftgo@latest`
+`GO111MODULE=on go install github.com/cloudwegox/thriftgo@latest`
 
 Or build from source:
 
 ```shell
-git clone https://github.com/cloudwego/thriftgo.git
+git clone https://github.com/cloudwegox/thriftgo.git
 cd thriftgo
 export GO111MODULE=on
 go mod tidy

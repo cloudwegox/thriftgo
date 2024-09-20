@@ -16,7 +16,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/cloudwego/thriftgo/sdk"
+	"github.com/cloudwegox/thriftgo/sdk"
 	"os"
 	"runtime/debug"
 	"runtime/pprof"

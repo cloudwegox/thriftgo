@@ -16,7 +16,7 @@
 
 generate () {
     out=gen-$1
-    opt="go:package_prefix=github.com/cloudwego/thriftgo/test/golang/fieldmask/$out"
+    opt="go:package_prefix=github.com/cloudwegox/thriftgo/test/golang/fieldmask/$out"
     idl=$2
     if [ -d $out ]; then
         rm -rf $out

@@ -22,12 +22,12 @@ import (
 	"strconv"
 	"strings"
 
-	thrift_option "github.com/cloudwego/thriftgo/extension/thrift_option"
+	thrift_option "github.com/cloudwegox/thriftgo/extension/thrift_option"
 
-	"github.com/cloudwego/thriftgo/generator/golang/common"
-	"github.com/cloudwego/thriftgo/generator/golang/streaming"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/pkg/namespace"
+	"github.com/cloudwegox/thriftgo/generator/golang/common"
+	"github.com/cloudwegox/thriftgo/generator/golang/streaming"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/pkg/namespace"
 )
 
 const (

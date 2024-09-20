@@ -17,8 +17,8 @@ package thrift_reflection
 import (
 	"strings"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/utils"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/utils"
 )
 
 func GetFileDescriptor(ast *parser.Thrift) *FileDescriptor {

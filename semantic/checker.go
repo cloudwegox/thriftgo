@@ -19,7 +19,7 @@ import (
 	"log"
 	"math"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // Checker reports whether there are semantic errors in the AST and produces

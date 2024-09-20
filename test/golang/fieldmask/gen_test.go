@@ -17,8 +17,8 @@ package fieldmask
 // import (
 // 	"testing"
 
-// 	"github.com/cloudwego/thriftgo/internal/test_util"
-// 	"github.com/cloudwego/thriftgo/plugin"
+// 	"github.com/cloudwegox/thriftgo/internal/test_util"
+// 	"github.com/cloudwegox/thriftgo/plugin"
 // )
 
 // func TestGen(t *testing.T) {

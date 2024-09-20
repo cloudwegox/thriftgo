@@ -21,12 +21,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/generator"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/semantic"
-	"github.com/cloudwego/thriftgo/tool/trimmer/dump"
-	"github.com/cloudwego/thriftgo/tool/trimmer/trim"
-	"github.com/cloudwego/thriftgo/version"
+	"github.com/cloudwegox/thriftgo/generator"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/tool/trimmer/dump"
+	"github.com/cloudwegox/thriftgo/tool/trimmer/trim"
+	"github.com/cloudwegox/thriftgo/version"
 )
 
 var (

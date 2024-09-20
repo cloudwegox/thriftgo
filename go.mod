@@ -1,4 +1,4 @@
-module github.com/cloudwego/thriftgo
+module github.com/cloudwegox/thriftgo
 
 go 1.13
 

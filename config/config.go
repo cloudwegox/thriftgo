@@ -22,7 +22,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/utils/dir_utils"
+	"github.com/cloudwegox/thriftgo/utils/dir_utils"
 
 	"gopkg.in/yaml.v3"
 )

@@ -18,7 +18,7 @@ import (
 	"sort"
 	"unsafe"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // assuming the generated codes run on the same architecture as thriftgo.

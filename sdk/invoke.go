@@ -16,14 +16,14 @@ package sdk
 
 import (
 	"fmt"
-	"github.com/cloudwego/thriftgo/generator/golang"
+	"github.com/cloudwegox/thriftgo/generator/golang"
 
-	targs "github.com/cloudwego/thriftgo/args"
-	"github.com/cloudwego/thriftgo/generator"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/plugin"
-	"github.com/cloudwego/thriftgo/semantic"
-	"github.com/cloudwego/thriftgo/version"
+	targs "github.com/cloudwegox/thriftgo/args"
+	"github.com/cloudwegox/thriftgo/generator"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/semantic"
+	"github.com/cloudwegox/thriftgo/version"
 )
 
 func init() {

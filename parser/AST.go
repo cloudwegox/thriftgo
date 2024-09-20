@@ -6,7 +6,7 @@ import (
 	"database/sql"
 	"database/sql/driver"
 	"fmt"
-	"github.com/cloudwego/thriftgo/generator/golang/extension/meta"
+	"github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
 )
 
 type Category int64

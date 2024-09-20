@@ -19,7 +19,7 @@ package option_gen
 import (
 	"reflect"
 
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 // IDL Name: test

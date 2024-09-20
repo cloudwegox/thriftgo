@@ -18,8 +18,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/config"
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/config"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 func (s *Scope) GetFirstDescriptor() string {

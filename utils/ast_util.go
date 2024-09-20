@@ -17,7 +17,7 @@
 package utils
 
 import (
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // reuse builtin types

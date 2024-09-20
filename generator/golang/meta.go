@@ -17,8 +17,8 @@ package golang
 import (
 	"fmt"
 
-	"github.com/cloudwego/thriftgo/generator/golang/extension/meta"
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 func deref(pAST **parser.Thrift, pType **parser.Type) {

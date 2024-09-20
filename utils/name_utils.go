@@ -17,7 +17,7 @@ package utils
 import (
 	"strings"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 var basicMap = map[string]bool{

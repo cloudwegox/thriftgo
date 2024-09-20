@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 type GlobalDescriptor struct {

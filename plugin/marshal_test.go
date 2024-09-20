@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/pkg/test"
 )
 
 func TestMarshalUnmarshal(t *testing.T) {

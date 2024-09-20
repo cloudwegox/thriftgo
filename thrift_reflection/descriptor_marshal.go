@@ -19,7 +19,7 @@ import (
 	"compress/gzip"
 	"io/ioutil"
 
-	"github.com/cloudwego/thriftgo/generator/golang/extension/meta"
+	"github.com/cloudwegox/thriftgo/generator/golang/extension/meta"
 )
 
 func (fd *FileDescriptor) Marshal() ([]byte, error) {

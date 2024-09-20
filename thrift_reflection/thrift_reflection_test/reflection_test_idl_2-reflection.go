@@ -19,7 +19,7 @@ package thrift_reflection_test
 import (
 	"reflect"
 
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 // IDL Name: reflection_test_idl_2

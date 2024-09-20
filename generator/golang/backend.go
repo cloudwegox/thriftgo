@@ -21,17 +21,17 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/cloudwego/thriftgo/generator/golang/streaming"
-	"github.com/cloudwego/thriftgo/generator/golang/templates/slim"
-	"github.com/cloudwego/thriftgo/tool/trimmer/trim"
+	"github.com/cloudwegox/thriftgo/generator/golang/streaming"
+	"github.com/cloudwegox/thriftgo/generator/golang/templates/slim"
+	"github.com/cloudwegox/thriftgo/tool/trimmer/trim"
 
-	ref_tpl "github.com/cloudwego/thriftgo/generator/golang/templates/ref"
-	reflection_tpl "github.com/cloudwego/thriftgo/generator/golang/templates/reflection"
+	ref_tpl "github.com/cloudwegox/thriftgo/generator/golang/templates/ref"
+	reflection_tpl "github.com/cloudwegox/thriftgo/generator/golang/templates/reflection"
 
-	"github.com/cloudwego/thriftgo/generator/backend"
-	"github.com/cloudwego/thriftgo/generator/golang/templates"
-	"github.com/cloudwego/thriftgo/parser"
-	"github.com/cloudwego/thriftgo/plugin"
+	"github.com/cloudwegox/thriftgo/generator/backend"
+	"github.com/cloudwegox/thriftgo/generator/golang/templates"
+	"github.com/cloudwegox/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/plugin"
 )
 
 // GoBackend generates go codes.

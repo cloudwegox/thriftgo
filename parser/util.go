@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/utils/dir_utils"
+	"github.com/cloudwegox/thriftgo/utils/dir_utils"
 )
 
 func normalizeFilename(fn string) string {

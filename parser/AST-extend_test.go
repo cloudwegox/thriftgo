@@ -17,7 +17,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/cloudwego/thriftgo/pkg/test"
+	"github.com/cloudwegox/thriftgo/pkg/test"
 )
 
 func TestAnnotationsAppend(t *testing.T) {

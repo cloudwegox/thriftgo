@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"unsafe"
 
-	"github.com/cloudwego/thriftgo/thrift_reflection"
+	"github.com/cloudwegox/thriftgo/thrift_reflection"
 )
 
 type pathType int

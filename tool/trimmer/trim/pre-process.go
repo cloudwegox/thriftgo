@@ -14,7 +14,7 @@
 
 package trim
 
-import "github.com/cloudwego/thriftgo/parser"
+import "github.com/cloudwegox/thriftgo/parser"
 
 func (t *Trimmer) preProcess(ast *parser.Thrift, filename string) bool {
 	ret := t.markKeptPart(ast, filename)

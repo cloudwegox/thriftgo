@@ -20,7 +20,7 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/cloudwego/thriftgo/parser"
+	"github.com/cloudwegox/thriftgo/parser"
 )
 
 // DumpIDL Dump the ast to idl string
