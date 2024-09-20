@@ -120,38 +120,39 @@ func (p *{{$ProcessName}}) Process(ctx context.Context, seqId int32, iprot, opro
 	if err2 = p.handler.{{$FuncName}}(ctx {{- range .Arguments}}, args.{{($ArgType.Field .Name).GoName}}{{- end}}); err2 != nil {
 		{{- else}}
 	var retval {{.ResponseGoTypeName}}
-	if retval, err2 = p.handler.{{$FuncName}}(ctx {{- range .Arguments}}, args.{{($ArgType.Field .Name).GoName}}{{- end}}); err2 != nil {
-		{{- end}}{{/* if .Void */}}
+	retval = p.handler.{{$FuncName}}({{- range $i, $e := .Arguments}}{{if ne $i 0}},{{end}} args.{{($ArgType.Field .Name).GoName}}{{- end}})
+{{/*	if ; err2 != nil {*/}}
+{{/*		{{- end}}*/}}{{/* if .Void */}}
 
-		{{- if .Throws}}
-		switch v := err2.(type) {
-		{{- range .Throws}}
-		case {{.GoTypeName}}:
-			result.{{($ResType.Field .Name).GoName}} = v
-		{{- end}}
-		default:
-			x := thrift.NewTApplicationException(thrift.INTERNAL_ERROR, "Internal error processing {{.Name}}: "+err2.Error())
-			oprot.WriteMessageBegin("{{.Name}}", thrift.EXCEPTION, seqId)
-			x.Write(oprot)
-			oprot.WriteMessageEnd()
-			oprot.Flush(ctx)
-			return true, err2
-		}
-		{{- else}}
-		x := thrift.NewTApplicationException(thrift.INTERNAL_ERROR, "Internal error processing {{.Name}}: "+err2.Error())
-		oprot.WriteMessageBegin("{{.Name}}", thrift.EXCEPTION, seqId)
-		x.Write(oprot)
-		oprot.WriteMessageEnd()
-		oprot.Flush(ctx)
-		return true, err2
-		{{- end}}{{/* if .Throws */}}
-	{{- if not .Void}}
-	} else {
+{{/*		{{- if .Throws}}*/}}
+{{/*		switch v := err2.(type) {*/}}
+{{/*		{{- range .Throws}}*/}}
+{{/*		case {{.GoTypeName}}:*/}}
+{{/*			result.{{($ResType.Field .Name).GoName}} = v*/}}
+{{/*		{{- end}}*/}}
+{{/*		default:*/}}
+{{/*			x := thrift.NewTApplicationException(thrift.INTERNAL_ERROR, "Internal error processing {{.Name}}: "+err2.Error())*/}}
+{{/*			oprot.WriteMessageBegin("{{.Name}}", thrift.EXCEPTION, seqId)*/}}
+{{/*			x.Write(oprot)*/}}
+{{/*			oprot.WriteMessageEnd()*/}}
+{{/*			oprot.Flush(ctx)*/}}
+{{/*			return true, err2*/}}
+{{/*		}*/}}
+{{/*		{{- else}}*/}}
+{{/*		x := thrift.NewTApplicationException(thrift.INTERNAL_ERROR, "Internal error processing {{.Name}}: "+err2.Error())*/}}
+{{/*		oprot.WriteMessageBegin("{{.Name}}", thrift.EXCEPTION, seqId)*/}}
+{{/*		x.Write(oprot)*/}}
+{{/*		oprot.WriteMessageEnd()*/}}
+{{/*		oprot.Flush(ctx)*/}}
+{{/*		return true, err2*/}}
+{{/*		{{- end}}*/}}{{/* if .Throws */}}
+{{/*	{{- if not .Void}}*/}}
+{{/*	} else {*/}}
 		{{- with $rt := (index $ResType.Fields 0)}}
 		result.Success = {{if and (NeedRedirect $rt.Field) (IsBaseType $rt.Type)}}&{{end}}retval
 		{{- end}}
 	{{- end}}
-	}
+{{/*	}*/}}
 	if err2 = oprot.WriteMessageBegin("{{.Name}}", thrift.REPLY, seqId); err2 != nil {
 		err = err2
 	}

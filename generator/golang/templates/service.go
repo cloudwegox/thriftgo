@@ -27,13 +27,12 @@ var FunctionSignature = `
 		stream {{.Service.GoName}}_{{.Name}}Server) (err error)
 {{- else -}}
 	{{- UseStdLibrary "context" -}}
-	{{- .GoName}}(ctx context.Context
-	{{- range .Arguments -}}
-		, {{.GoName}} {{.GoTypeName}}
+	{{- .GoName}}(
+	{{- range $i, $e := .Arguments -}}
+	{{if ne $i 0}},{{end}} {{$e.GoName}} {{$e.GoTypeName}}
 	{{- end -}}
-		) (
-	{{- if not .Void}}r {{.ResponseGoTypeName}}, {{- end -}}
-		err error)
+	)
+	{{- if not .Void}}{{.ResponseGoTypeName}}{{- end -}}
 {{- end -}}{{/* end if streaming */}}
 {{- end}}{{/* define "FunctionSignature" */}}
 `

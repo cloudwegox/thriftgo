@@ -75,6 +75,7 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 	{{if .Streaming.IsStreaming -}}
 	panic("streaming method {{$ServiceName}}.{{.Name}}(mode = {{.Streaming.Mode}}) not available, please use Kitex Thrift Streaming Client.")
 	{{else -}}
+	ctx := context.Background()
 	var _args {{$ArgType.GoName}}
 	{{- range .Arguments}}
 	_args.{{($ArgType.Field .Name).GoName}} = {{.GoName}}
@@ -82,13 +83,13 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 
 	{{- if .Void}}
 	{{- if .Oneway}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, nil); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, nil); err != nil {
+		panic(err)
 	}
 	{{- else}}
 	var _result {{$ResType.GoName}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
+		panic(err)
 	}
 	{{- if .Throws}}
 	switch {
@@ -103,8 +104,8 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 	return nil
 	{{- else}}{{/* If .Void */}}
 	var _result {{$ResType.GoName}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
+		panic(err)
 	}
 	{{- if .Throws}}
 	switch {
@@ -114,7 +115,7 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 	{{- end}}
 	}
 	{{- end}}
-	return _result.GetSuccess(), nil
+	return _result.GetSuccess()
 	{{- end}}{{/* If .Void */}}
 	{{- end}}{{/* If .Streaming.IsStreaming */ -}}
 }
