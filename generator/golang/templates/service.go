@@ -20,11 +20,11 @@ var FunctionSignature = `
 {{- $Function := .}}
 {{- if or .Streaming.ClientStreaming .Streaming.ServerStreaming}}
 	{{- $arg := index .Arguments 0}}
-	{{- .GoName}}({{- if Features.StreamX}}{{- UseStdLibrary "context" -}}ctx context.Context,{{- end}}
+	{{- .GoName}}({{- UseStdLibrary "context" -}}ctx context.Context,
 	{{- if and .Streaming.ServerStreaming (not .Streaming.ClientStreaming) -}}
 		req {{$arg.GoTypeName}},
 	{{- end -}}
-		stream {{.Service.GoName}}_{{.Name}}Server) (err error)
+		stream {{.Service.GoName}}_{{.Name}}Server)
 {{- else -}}
 	{{- .GoName}}(
 	{{- range $i, $e := .Arguments -}}
