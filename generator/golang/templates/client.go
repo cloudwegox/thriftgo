@@ -18,6 +18,7 @@ package templates
 var Client = `
 {{define "ThriftClient"}}
 {{- if not Features.NoProcessor}}
+{{- UseStdLibrary "context"}}
 {{- UseStdLibrary "thrift"}}
 {{- $BasePrefix := ServicePrefix .Base}}
 {{- $BaseService := ServiceName .Base}}
@@ -75,6 +76,7 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 	{{if .Streaming.IsStreaming -}}
 	panic("streaming method {{$ServiceName}}.{{.Name}}(mode = {{.Streaming.Mode}}) not available, please use Kitex Thrift Streaming Client.")
 	{{else -}}
+	ctx := context.Background()
 	var _args {{$ArgType.GoName}}
 	{{- range .Arguments}}
 	_args.{{($ArgType.Field .Name).GoName}} = {{.GoName}}
@@ -82,39 +84,39 @@ func (p *{{$ClientName}}) {{- template "FunctionSignature" . -}} {
 
 	{{- if .Void}}
 	{{- if .Oneway}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, nil); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, nil); err != nil {
+		panic(err)
 	}
 	{{- else}}
 	var _result {{$ResType.GoName}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
+		panic(err)
 	}
 	{{- if .Throws}}
 	switch {
 	{{- range .Throws}}
 	case _result.{{($ResType.Field .Name).GoName}} != nil:
-		return _result.{{($ResType.Field .Name).GoName}}
+		panic(_result.{{($ResType.Field .Name).GoName}})
 	{{- end}}
 	}
 	{{- end}}
 
 	{{- end}}
-	return nil
+	return
 	{{- else}}{{/* If .Void */}}
 	var _result {{$ResType.GoName}}
-	if err = p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
-		return
+	if err := p.Client_().Call(ctx, "{{.Name}}", &_args, &_result); err != nil {
+		panic(err)
 	}
 	{{- if .Throws}}
 	switch {
 	{{- range .Throws}}
 	case _result.{{($ResType.Field .Name).GoName}} != nil:
-		return r, _result.{{($ResType.Field .Name).GoName}}
+		panic(_result.{{($ResType.Field .Name).GoName}})
 	{{- end}}
 	}
 	{{- end}}
-	return _result.GetSuccess(), nil
+	return _result.GetSuccess()
 	{{- end}}{{/* If .Void */}}
 	{{- end}}{{/* If .Streaming.IsStreaming */ -}}
 }

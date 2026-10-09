@@ -228,6 +228,7 @@ func (s *Scope) buildFunction(cu *CodeUtils, f *Function, v *parser.Function) {
 	ns.MustReserve("p", _p("p"))     // the receiver of method
 	ns.MustReserve("err", _p("err")) // error
 	ns.MustReserve("ctx", _p("ctx")) // first parameter
+	ns.MustReserve("resp", _p("resp")) // response
 
 	if !v.Void {
 		ns.MustReserve("r", _p("r"))             // response
